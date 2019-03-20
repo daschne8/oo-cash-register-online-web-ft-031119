@@ -7,7 +7,7 @@ class CashRegister
     @item_array = []
   end
   def add_item(title,price,quantity=1)
-    @item_array << title
+    quantity.times {@item_array << title}
     @total += price*quantity
   end
   def apply_discount
