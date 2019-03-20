@@ -13,7 +13,7 @@ class CashRegister
       @total *= @discount/100.0
       returns "After the discount, the total comes to $#{@total}."
     else
-      
+
     end
   end
 
