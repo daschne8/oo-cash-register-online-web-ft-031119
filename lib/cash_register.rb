@@ -7,6 +7,7 @@ class CashRegister
     @item_array = []
   end
   def add_item(title,price,quantity=1)
+    @last_transaction = [title,price,quantity]
     quantity.times {@item_array << title}
     @total += price*quantity
   end
@@ -21,6 +22,7 @@ class CashRegister
   def items
     @item_array
   end
+  def void_last_transaction
 
 
 end
